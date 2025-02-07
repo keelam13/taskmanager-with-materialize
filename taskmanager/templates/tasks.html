@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
 <h3 class="light-blue-text text-darken-4 center-align">Tasks</h3>
 
 <div class="row">
@@ -23,6 +24,9 @@
         <div class="collapsible-body">
             <strong>{{ task.category }}</strong>
             <p>{{ task.task_description }}</p>
+            <p>
+                <a href="{{ url_for('edit_task', task_id=task.id) }}" class="btn green accent-4">Edit</a>
+            </p>
         </div>
     </li>
     {% endfor %}
