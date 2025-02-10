@@ -18,4 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
   let collapse = document.querySelectorAll('.collapsible');
   M.Collapsible.init(collapse);
 
+  // deletion initialization
+  let deletion = document.querySelectorAll('.modal');
+  M.Modal.init(deletion);
+
 });
